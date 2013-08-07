@@ -38,3 +38,4 @@ magic:
     outsb    %ds:(%rsi),  (%dx)
     and      %dh,         0x61(%edi)
     .byte    0x79,        0x21,       0x0a
+
