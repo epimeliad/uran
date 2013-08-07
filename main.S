@@ -29,3 +29,4 @@ main:
 
 magic:
     rex.WRXB outsl        %ds:(%rsi), (%dx)
+    outsl    %ds:(%rsi),  (%dx)
