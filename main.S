@@ -36,3 +36,4 @@ magic:
     imul     $0x72772061, 0x20(%rbx), %esi
     outsl    %ds:(%rsi),  (%dx)
     outsb    %ds:(%rsi),  (%dx)
+    and      %dh,         0x61(%edi)
