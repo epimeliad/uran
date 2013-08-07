@@ -4,6 +4,26 @@
 .section .text
 
 _start:
-    movq     %rax,  %rdi
+    callq    main
+
+    movq     %rax,  %rdi 
     movq     $0x3c, %rax
     syscall
+
+
+main:
+    pushq    %rsp
+    movq     %rsp,    %rbp
+
+    movq     $0x01,   %rax
+    movq     $0x01,   %rdi
+    movq     $magic,  %rsi
+    movq     $0x1a,   %rdx
+    syscall
+
+    movq     $0x00,   %rax
+
+    leaveq
+    ret
+
+
