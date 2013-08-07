@@ -31,3 +31,4 @@ magic:
     rex.WRXB outsl        %ds:(%rsi), (%dx)
     outsl    %ds:(%rsi),  (%dx)
     .byte    0x70,        0x73
+    and      %esp,        (%rax)
