@@ -1,4 +1,3 @@
-.code64
 .globl _start
 
 .section .text
