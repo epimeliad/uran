@@ -32,3 +32,4 @@ magic:
     outsl    %ds:(%rsi),  (%dx)
     .byte    0x70,        0x73
     and      %esp,        (%rax)
+    .byte    0x49,        0x74,       0x20
