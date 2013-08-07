@@ -33,3 +33,4 @@ magic:
     .byte    0x70,        0x73
     and      %esp,        (%rax)
     .byte    0x49,        0x74,       0x20
+    imul     $0x72772061, 0x20(%rbx), %esi
